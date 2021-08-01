@@ -14,6 +14,7 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("/interfaces/Location.fxml"));
 			Scene scene1 = new Scene(root);
 			primaryStage.setScene(scene1);
+			
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
