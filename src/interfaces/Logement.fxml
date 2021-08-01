@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="461.0" prefWidth="728.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+   <children>
+      <Label layoutX="32.0" layoutY="23.0" text="Rechercher">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="141.0" layoutY="22.0" prefHeight="26.0" prefWidth="211.0" promptText="identifiant" AnchorPane.topAnchor="22.0" />
+      <FontAwesomeIcon layoutX="364.0" layoutY="39.0" />
+      <TextField layoutX="32.0" layoutY="62.0" prefHeight="26.0" prefWidth="221.0" promptText="adresse" />
+      <TextField layoutX="272.0" layoutY="62.0" prefHeight="26.0" prefWidth="186.0" promptText="superficie" />
+      <JFXComboBox layoutX="32.0" layoutY="107.0" prefHeight="26.0" prefWidth="125.0" promptText="région" />
+      <JFXComboBox layoutX="184.0" layoutY="107.0" prefHeight="26.0" prefWidth="125.0" promptText="province" />
+      <JFXComboBox layoutX="329.0" layoutY="107.0" prefHeight="26.0" prefWidth="125.0" promptText="commune" />
+      <JFXComboBox layoutX="32.0" layoutY="149.0" prefHeight="26.0" prefWidth="114.0" promptText="type" />
+      <TextField layoutX="161.0" layoutY="154.0" prefHeight="26.0" prefWidth="142.0" promptText="loyer" />
+      <FontAwesomeIcon layoutX="317.0" layoutY="171.0" />
+      <Label layoutX="339.0" layoutY="157.0" prefHeight="18.0" prefWidth="114.0" text="aucune sélectionnée" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TableView layoutX="32.0" layoutY="202.0" prefHeight="206.0" prefWidth="658.0" stylesheets="@../application/application.css" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0">
+        <columns>
+          <TableColumn prefWidth="56.000030517578125" text="id" />
+          <TableColumn prefWidth="120.79995727539062" text="adresse" />
+            <TableColumn prefWidth="118.39996337890625" text="superficie" />
+            <TableColumn prefWidth="117.60003662109375" text="loyer" />
+            <TableColumn prefWidth="116.79998779296875" text="type" />
+            <TableColumn prefWidth="131.20001220703125" text="région" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="158.0" fitWidth="222.0" layoutX="468.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="32.0" />
+      <JFXButton layoutX="241.0" layoutY="421.0" prefHeight="26.0" prefWidth="91.0" styleClass="buttons" stylesheets="@../application/application.css" text="Ajouter" textFill="WHITESMOKE" AnchorPane.bottomAnchor="13.600000000000001" />
+      <JFXButton layoutX="346.0" layoutY="421.0" prefWidth="91.0" styleClass="buttons" stylesheets="@../application/application.css" text="Modifier" textFill="WHITESMOKE" />
+      <JFXButton layoutX="455.0" layoutY="421.0" prefWidth="91.0" styleClass="buttons" stylesheets="@../application/application.css" text="Supprimer" textFill="WHITESMOKE" />
+   </children>
+</AnchorPane>
